@@ -19,7 +19,7 @@ export const Wrapping = () => {
                     <TD>Phone Number</TD>
                 </TH>
                 {data.map((human, index) => (
-                    <TR key={index}>
+                    <TR key={index} wrap={false}>
                         <TD>{human.firstName}</TD>
                         <TD>{human.lastName}</TD>
                         <TD>{human.dob.toLocaleString()}</TD>
